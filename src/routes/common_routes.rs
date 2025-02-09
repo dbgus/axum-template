@@ -1,3 +1,4 @@
+use axum::extract::State;
 use utoipa_axum::{router::OpenApiRouter, routes};
 
 pub fn common_routes() -> OpenApiRouter {

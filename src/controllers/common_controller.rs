@@ -1,6 +1,8 @@
-use axum::Json;
+use axum::{extract::State, Json};
 use serde::{Deserialize, Serialize};
 use utoipa::ToSchema;
+
+use crate::AppState;
 
 #[derive(Debug, Serialize, Deserialize, ToSchema, Clone)]
 pub struct User {
